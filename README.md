@@ -22,7 +22,7 @@ https://todo.ru.com/
 * Нативный React (create-react-app) без использования сторонних библиотек;
 * Компонентная структура;
 * Роутинг
-* Асинхронность;
+* HTTP запросы - Axios;
 * Работа с API [Firebase.google](https://firebase.google.com/);
 * Верстка BEM;
 * Стили SCSS 
