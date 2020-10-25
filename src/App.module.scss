@@ -1,0 +1,41 @@
+.todo {
+  display: flex;
+  margin: 10px;
+  //position: absolute;
+  //left: 50%;
+  //top: 50%;
+  max-width: 750px;
+  min-height: 530px;
+  //transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #f4f6f8;
+
+
+  &__sidebar {
+    background-color: #f4f6f8;
+    width: 260px;
+    border-right: 1px solid #f1f1f1;
+    min-height: 100%;
+    padding: 30px 20px;
+  }
+  &__tascs {
+    flex: 1;
+    padding: 17px 25px;
+    max-height: 530px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 540px) {
+  .todo__sidebar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .todo {
+    display: block;
+  }
+}
+
+

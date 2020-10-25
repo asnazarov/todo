@@ -1,0 +1,95 @@
+.list {
+  //$self: &;
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.list:last-child {
+  margin-bottom: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+//::-webkit-scrollbar {
+//  background-color: #c3ecfd;
+//}
+::-webkit-scrollbar-thumb {
+  //background: #c3c4c230;
+  background: rgb(174, 255, 244);
+  border-radius: 7px;
+}
+
+
+.list__item {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  cursor: pointer;
+  margin-bottom: 3px;
+
+  &:hover .list__removeIcon {
+    opacity: 0.3;
+  }
+  .list__removeIcon {
+    padding: 5px;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+  }
+
+  &.active {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+&.act {
+  background: greenyellow;
+}
+  i {
+    margin-right: 8px;
+    opacity: 0.8;
+  }
+}
+
+.list__text {
+  flex: 1;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  width: 160px;
+  overflow: hidden;
+  height: 1.2em;
+  white-space: nowrap;
+
+  overflow-wrap: break-word;
+  outline-style: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.list__addButton {
+  color: #767676;
+
+  &:hover {
+    background: transparent;
+    color: #000;
+  }
+}
+
+
+

@@ -1,0 +1,91 @@
+.addList {
+margin-bottom: 20px;
+}
+
+.addPopup {
+  position: absolute;
+  padding: 18px;
+  width: 235px;
+  min-height: 100px;
+  background: #f4f6f8f0;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  top: 66px;
+  left: 240px;
+  z-index: 2;
+
+  &__closePopup {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+  }
+
+  &__listItem {
+    margin-bottom: 15px;
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__listColor {
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    width: 200px;
+    background: #4DD599;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 2.2rem;
+    outline: none;
+    border: #3ea578;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(#4DD599, 7%);
+      outline: none;
+    }
+
+    &:active {
+      background: darken(#4DD599, 14%);
+      outline: none;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .addPopup {
+    display: block;
+    position: relative;
+    top: 25%;
+    left: 0;
+  }
+}
+.field {
+  padding: 8px 12px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2rem;
+
+  &:focus {
+    border-color: #ccc;
+  }
+}
+
+.field__valid {
+  min-height: 16px;
+  margin-left: 12px;
+  font-size: 12px;
+  color: tomato;
+}

@@ -1,0 +1,236 @@
+.tasks {
+margin-bottom: 10px;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    border-bottom: 1px solid #adadad66;
+    outline-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &:hover {
+      img {
+        opacity: 0.3;
+      }
+    }
+
+    img {
+      margin-left: 15px;
+      cursor: pointer;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__noTasks {
+    color: #C9D1D3;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  &__itemRow {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+
+    &:hover .tasks__removeIcon {
+      opacity: 0.3;
+    }
+
+    .tasks__removeIcon {
+      padding: 8px;
+      opacity: 0;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 15px;
+    width: 100%;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    outline-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  &__valid {
+    min-height: 16px;
+    margin-left: 12px;
+    font-size: 12px;
+    color: tomato;
+  }
+
+  &__formBlock {
+    margin: 20px 0 0 0;
+  }
+
+  &__formNew {
+    flex: 1 1;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    width: 160px;
+    height: 1.2em;
+    margin: 20px 0 25px 0;
+
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    outline-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #767676;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+
+    img {
+      margin-left: 3px;
+      margin-right: 14px;
+      opacity: 0.7;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__addTascs {
+    padding: 3px 20px;
+    margin: 20px 15px 0 0;
+    font-family: sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    background: #4DD599;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 2.2rem;
+    outline: none;
+    border: #3ea578;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(#4DD599, 7%);
+      outline: none;
+    }
+
+    &:active {
+      background: darken(#4DD599, 14%);
+      outline: none;
+    }
+    &:disabled {
+      background: #c6c6c6;
+    }
+  }
+
+  .tascs__addTascs_gray {
+    background: #efefef;
+    color: #9C9C9C;
+
+    &:hover {
+      background: #e5e5e5;
+      outline: none;
+    }
+
+    &:active {
+      background: #d0d0d0;
+      outline: none;
+    }
+  }
+
+  .field {
+    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.2rem;
+
+    &:focus {
+      border-color: #ccc;
+    }
+  }
+
+  .checkbox {
+
+    svg {
+      path {
+        stroke: #f2f2f2;
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #E8E8E8;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      //transition: opacity 0.2s ease-in-out;
+
+      svg {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      label {
+        background: #F2F2F2;
+        border: 2px solid #F2F2F2;
+
+        svg {
+          transition: opacity 0.2s ease-in-out;
+          opacity: 0.4;
+
+          path {
+            stroke: #B3B3B3;
+          }
+        }
+      }
+    }
+
+    input:checked + label {
+      background: #4DD599;
+      border: 2px solid #4DD599;
+
+      svg {
+        opacity: 1;
+
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+
+  }
+}
+

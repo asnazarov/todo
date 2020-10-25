@@ -1,0 +1,52 @@
+.badge {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  &_stylePopup {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  &_stylePopupАctive {
+    border: 2px solid #525252;
+  }
+}
+.badge__grey {
+  background-color: #C9D1D3;
+}
+
+.badge__green {
+  background-color: #42B883;
+}
+
+.badge__blue {
+  background-color: #64C4ED;
+}
+
+.badge__pink {
+  background-color: #FFBBCC;
+}
+.badge__lime {
+  background-color: #B6E6BD;
+}
+
+.badge__purple {
+  background-color: #C355F5;
+}
+
+.badge__black {
+  background-color: #0d0028;
+}
+
+.badge__red {
+  background-color: #FF6464;
+}
+
+//.activeColor {
+//  background-color: #fff;
+//  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+//  border-radius: 4px;
+//}
+
